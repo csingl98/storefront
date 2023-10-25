@@ -18,7 +18,7 @@ DATABASES = {
 ALLOWED_HOSTS = ["cs-storefront-prod-be613e5d3f93.herokuapp.com"]
 # https://git.heroku.com/cs-storefront-prod.git
 
-REDIS_URL = os.environ["REDIS_URL"]
+REDIS_URL = os.environ["REDISCLOUD_URL"]
 
 CELERY_BROKER_URL = REDIS_URL
 
@@ -37,4 +37,4 @@ CACHES = {
 EMAIL_HOST = os.environ['MAILGUN_SMTP_SERVER']
 EMAIL_HOS_USER = os.environ['MAILGUN_SMTP_LOGIN']
 EMAIL_HOST_PASSWORD = os.environ['MAILGUN_SMTP_PASSWORD']
-EMAIL_PORT = os.environ['MAILGUN_SMTP_PORTher']
+EMAIL_PORT = os.environ['MAILGUN_SMTP_PORT']
