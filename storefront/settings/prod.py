@@ -6,7 +6,7 @@ import dj_database_url
 DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.env["SECRET_KEY"]
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -37,4 +37,4 @@ CACHES = {
 EMAIL_HOST = os.environ['MAILGUN_SMTP_SERVER']
 EMAIL_HOS_USER = os.environ['MAILGUN_SMTP_LOGIN']
 EMAIL_HOST_PASSWORD = os.environ['MAILGUN_SMTP_PASSWORD']
-EMAIL_PORT = os.environ['MAILGUN_SMTP_PORT']
+EMAIL_PORT = os.environ['MAILGUN_SMTP_PORTher']
